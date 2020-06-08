@@ -22,11 +22,15 @@ public class Program2 {
 		System.out.println(obj);
 		}
 		
-		//System.out.println("\n=== Test 4 INSERT ====");
-		//Department department = new Department(null, "Music");
-		//departmentDao.insert(department);
-		//System.out.println("Novo Departamento incluso: " + department.getId());
+		System.out.println("\n=== Test 3 INSERT ====");
+		Department department = new Department(null, "Music");
+		departmentDao.insert(department);
+		System.out.println("Novo Departamento incluso: " + department.getId());
 		
+		System.out.println("\n=== Test 4 UPDATE ====");
+		dep = new Department(3, "Foods");
+		departmentDao.upDate(dep);
+		System.out.println("Departamento atualizado");
 	}
 
 }
